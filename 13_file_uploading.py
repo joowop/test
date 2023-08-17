@@ -7,6 +7,7 @@ app = Flask(__name__)
 app.secret_key = "super secret key"
 app.config['UPLOAD_FOLDER'] = 'C:/Users/user/Desktop/develop/prect_11/data'
 
+# 라우터
 @app.route('/')
 def upload_file():
     return render_template('13_upload.html')
